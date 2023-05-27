@@ -31,15 +31,14 @@ import Sales from "./Salesfolder/Sales/Sales";
 import Video1 from "./videos/Hero.mp4";
 import ReactPlayer from "react-player";
 
-
 export default function Home() {
   const images = [image, image1, image2, image3, image4];
 
   return (
     <>
-    <Header />
-      
-        {/* {
+      <Header />
+
+      {/* {
           <Carousel>
             {images.map((item) => (
               <Carousel.Item key={images}>
@@ -51,101 +50,85 @@ export default function Home() {
             ))}
           </Carousel>
         } */}
-        <div className="mainhome">
-          <div className="overlay">
+      <div className="mainhome">
+        <div className="overlay">
           <video src={Video1} autoPlay loop muted />
         </div>
-        </div>
-        <div className="Hometext">
-          <h1>
-Welcome to Bhavishya Nirman Developers</h1>
-<h2>
-Are You Looking For your Dream Home in Chattarpur ?</h2>
-<h3>Deals in 2 BHK, 3 BHK & 4 BHK <br></br>Flats in Chattarpur, South Delhi</h3>
-<p>Book Your Dream Home With Zero% Brokerage</p>
-        </div>
-        <div className="Best-project">
-          <h1>Best Selling Project</h1>
-          <img src={image5} alt="Lily Apartment" />
-        </div>
-           <Prelaunch />
-            <Whatsapp />
+      </div>
+      <div className="Hometext">
+        <h1>Welcome to Bhavishya Nirman Developers</h1>
+        <h2>Are You Looking For your Dream Home in Chattarpur ?</h2>
+        <h3>
+          Deals in 2 BHK, 3 BHK & 4 BHK <br></br>Flats in Chattarpur, South
+          Delhi
+        </h3>
+        <p>Book Your Dream Home With Zero% Brokerage</p>
+      </div>
+      <div className="Best-project">
+        <h1>Best Selling Project</h1>
+        <img src={image5} alt="Lily Apartment" />
+      </div>
+      <Prelaunch />
+      <Whatsapp />
 
-            <div className="vimeo-testimonials">
-              <h1>What Our Clients Say ?</h1>
-              <Testimonialvideo />
-              <div>
-              <h1>Pre Launch Offer (Book Now )</h1>
-              <Prelaunching />
-            </div>
-              <div >
-                <div className="Freesitevisit">
-                  <h1>Book your Free Site Visit</h1>
-                  <button>Call Now</button>
-                </div>
-              </div>
-              <div >
-                <div className="Questionbook" >
-                  <h1>Do You Have Questions ?</h1>
-                  <button>Contact us Today</button>
-                </div>
-              </div>
-            </div>
-            <div className="Popularall">
-              <h1>Popular Projects</h1>
-              <p>Offering affordable flats in South Delhi with the best amenities.</p>
-              <PopularProject />
-
-            </div>
-            <div className="Popularall">
-            <h1>Happy Clients</h1>
-            <Testimonialimages />
-          </div>  
-            
-           
-            <div className="Popularall">
-              <h1>Walkthrough Videos</h1>
-              <p>Watch complete videos on YouTube</p>
-              <Video />
-            </div>
-            <div className="Popularall">
-              <h1>Free Site Visit Journey</h1>
-              <Sitevisitvideo />
-            </div>
-            <div className="Popularall">
-                <h1>Amenities</h1>
-                <Amenities />
-              </div>
-              <Abouthome />
-              <div className="Chooseusnow">
-                <h1>Why Choose Us ?</h1>
-                <p>Bhavishya Nirman Developers</p>
-              
-                <Chooseus />
-                </div>
-                <div className="Call">
-            <button className="Requestcall"><h1>Request a Call</h1></button>
+      <div className="vimeo-testimonials">
+        <h1>What Our Clients Say ?</h1>
+        <Testimonialvideo />
+        <div>
+          <h1 style={{ marginTop: "20px" }}>Pre Launch Offer (Book Now )</h1>
+          <Prelaunching />
+        </div>
+        <div>
+          <div className="Freesitevisit">
+            <h1>Book your Free Site Visit</h1>
+            <button>Call Now</button>
           </div>
-          <Sales />
+        </div>
+        <div>
+          <div className="Questionbook">
+            <h1>Do You Have Questions ?</h1>
+            <button>Contact us Today</button>
+          </div>
+        </div>
+      </div>
+      <div className="Popularall">
+        <h1>Popular Projects</h1>
+        <p>Offering affordable flats in South Delhi with the best amenities.</p>
+        <PopularProject />
+      </div>
+      <div className="Popularall">
+        <h1>Happy Clients</h1>
+        <Testimonialimages />
+      </div>
 
-           
-            
-            
-             
-              
-            
-          
-         
-        
-      
-      
-       
-         
-  
-        
-      
+      <div className="Popularall">
+        <h1>Walkthrough Videos</h1>
+        <p>Watch complete videos on YouTube</p>
+        <Video />
+      </div>
+      <div className="Popularall">
+        <h1>Free Site Visit Journey</h1>
+        <Sitevisitvideo />
+      </div>
+      <div className="Popularall">
+        <h1>Amenities</h1>
+        <Amenities />
+      </div>
+      <Abouthome />
+      <div className="Chooseusnow">
+        <h1>Why Choose Us ?</h1>
+        <p>Bhavishya Nirman Developers</p>
+
+        <Chooseus />
+      </div>
+      <div className="Call">
+        <button className="Requestcall">
+          <h1>Request a Call</h1>
+        </button>
+      </div>
+      <Sales />
+
       <FAQ />
-      
     </>
   );
 }
